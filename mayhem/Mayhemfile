@@ -1,0 +1,8 @@
+project: natsort
+target: fuzz-nat
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_nat.py
+    libfuzzer: true
